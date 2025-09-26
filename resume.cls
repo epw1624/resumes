@@ -91,10 +91,9 @@
 
 \newkeycommand{\educationItem}[university,program,graduation,grade,coursework,awards]{
     {\bf \commandkey{program}} \hfill {Graduating \commandkey{graduation}} \\
-    {\commandkey{university}} \hfill \ifcommandkey{grade}{\commandkey{grade}}{} \\
-    
+    {\commandkey{university}} \hfill \ifcommandkey{grade}{\commandkey{grade}}{} \\ \\
     \ifcommandkey{coursework}{\textbf{Relevant coursework:} \commandkey{coursework}}{} \\
-    \ifcommandkey{awards}{\textbf{Awards:} \commandkey{awards}}{} 
+    \vspace{-1em}
 }
 
 \newcommand{\skills}{
@@ -110,7 +109,7 @@
 
 \newenvironment{workSection}[1]{
   \textbf{\MakeUppercase{#1}}
-  \vspace{0.4em}
+  \vspace{0.2em}
   \hrule
   \vspace{-0.3em}
   \begin{list}{}{ % List for each individual item in the section

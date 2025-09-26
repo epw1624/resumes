@@ -14,151 +14,103 @@
     linkedin=epwood
 ]
 
-\summary{ Fourth year Computer Engineering and Honours Mathematics student looking for a co-op position for Summer 2025 }
-
 \education{
     \educationItem[
         university=University of British Columbia{,} Vancouver{,} BC,
-        graduation=April 2026,
+        graduation=April 2027,
         grade=GPA: 87.5\%,
-        program=B.A.S.C. Computer Engineering{,} Minor in Honours Mathematics,
-        coursework=Software Construction{,} Data Structures and Algorithms 1 \& 2{,} Operating Systems{,} Computer Communications{,} Computing Systems 1 \& 2{,} Digital Systems Design{,} Applied Linear Algebra{,} Mathematical Proofs, 
-        awards=Denis and Patricia Lytle Scholarship in Electrical and Computer Engineering{,} Trek Excellence Scholarship for Continuing Students{,} Thomas Beeching Scholarship,
+        program=B.A.Sc Computer Engineering{,} Minor in Honours Mathematics,
+        coursework=Microcomputer System Design{,} Computer Architecture{,} Operating Systems{,} Digital Systems Design 1 \& 2{,} Computer Communications{,} Circuit Analysis
     ]
 }
 
 \skills{
     \skillItem[
-        category=Programming Languages,
-        skills=Python{,} C{,} Rust{,} Java{,} C\#{,} C++{,} HTML/CSS{,} JavaScript/TypeScript{,} PHP{,} ARM{,} MIPS{,} Verilog{,} SystemVerilog,
-    ] \\
-    \skillItem[
-        category=Frameworks/Libraries,
-        skills=React.js{,} Django{,} SciPy{,} NumPy{,} pandas{,} Matplotlib{,} xUnit{,} Moq,
+        category=Programming,
+        skills=C{,} C++{,} Verilog{,} SystemVerilog{,} ARM{,} MIPS{,} Python{,} Bash{,} 
     ] \\
     \skillItem[
         category=Software \& Tools,
-        skills=Git{,} Linux{,} Docker{,} SQL{,} Power BI{,} Microsoft Power Platform{,} ModelSim{,} Quartus
+        skills=Git{,} Linux{,} Quartus{,} ModelSim{,} Vim{,} GCC{,} GDB
     ]
 }
 
 \begin{workSection}{Work Experience}
     \customItem[
+        title=\linkWithIcon{https://aws.amazon.com/s3/}{Software Development Engineering Intern - Amazon Web Services},
+        duration=May 2025 - July 2025,
+    ]
+    \vspace{-1.5em}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Designed and implemented an internal tool to automate data migrations within Amazon S3{,} improving load distibution across nodes in a large-scale distributed system
+    \end{itemize}
+    \customItem[
+        title=\linkWithIcon{https://www.esci.io/}{Full Stack Developer - Ensemble Scientific},
+        duration=February 2025 - Present,
+    ]
+    \vspace{-1.5em}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Developed embedded C++ code using the lvgl embedded graphics library for an ESP32 touch screen interface, enabling control of an autonomous irrigation system while offline
+        \item Used Django and React.js to develop a web-based interface for autonomous irrigation systems
+    \end{itemize}
+    \customItem[
         title=\linkWithIcon{https://www.terradygital.com/}{Developer Intern - Terra Dygital},
         duration=January 2024 - December 2024,
-        keyHighlight=Build software solutions using .NET{,} React.js{,} Microsoft Power Platform{,} and Azure cloud-based tools and services.
     ]
+    \vspace{-1.5em}
     \begin{itemize}
-        \item Developed a custom timesheet and billing system using the .NET framework, Microsoft SQL Server and React.js, reducing the time taken to send invoices to customers by 2 weeks per month 
-        \item Used TypeScript and React.js within the SharePoint Component Framework to develop a custom document management system, automating the sign-out process for a library of over 20,000 engineering drawings
-        \item Refactored a C\# console application that handles daily data imports to enable mocking of all API and SQL connections. Directed a team of 3 interns utilizing xUnit and Moq to develop a comprehensive suite of unit tests for the application
+        \itemsep -6pt {}
+        \item Developed a timesheet and billing system using the .NET framework, SQL, and React.js, reducing the time required to prepare customer invoices by 2 weeks per month 
     \end{itemize}
 \end{workSection}
 
 \begin{workSection}{Technical projects}
     \customItem[
-        title=\linkWithIcon{https://github.com/epw1624/new-voc-website}{UBC Varsity Outdoor Club Website},
-        duration=May 2024 - Present,
-        keyHighlight=Rebuild the club's website in Django to enable a more modern developer experience{,} and maintain the existing website using PHP{,} Django and MySQL
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-         \item Develop Django apps to handle club processes including membership management, gear rentals, and a trip calendar with built in sign-up tools
-         \item Write detailed documentation of all project components for future developers
-     \end{itemize}
-
-     \customItem[
-        title=\linkWithIcon{https://github.com/epw1624/voc-bot}{UBC Varsity Outdoor Club Member Verification System},
-        duration=August 2023 - September 2023,
-        keyHighlight=Create a membership verification system for users in the UBC Outdoor Club's Discord server
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-         \item Program a web API in PHP to retrieve membership data from the club website
-         \item Use Python scripts and the discord.py SDK to integrate the custom API with the Discord server
-         \item Containerize the project using Docker to simplify deployment to an EC2 instance
-     \end{itemize}
-
-     \customItem[
-        title=Chess Robot,
-        duration=February 2023 - April 2023,
-        keyHighlight=Create a web interface for controlling an autonomous chess robot via a websocket connection
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Use the Django web framework and JavaScript to develop a website that renders an interactive chessboard
-        \item Use WebSockets to maintain synchronization between the web server and the physical chessboard
-     \end{itemize}
-
-     \customItem[
-        title=Operating System Kernel,
-        duration=September 2023 - December 2023,
-        keyHighlight=Complete an implementation of an OS kernel using C and MIPS architecture
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Implement synchronization primitives for use throughout the kernel to support multithreaded execution
-        \item Implement UNIX syscalls including fork, exec, open and read
-        \item Design and implement a virtual memory system to reduce RAM needs by 75\%
-     \end{itemize}
-
-     \customItem[
-        title=RISC Machine,
-        duration=October 2022 - December 2022,
-        keyHighlight=Use SystemVerilog to design and test a RISC machine that can execute a subset of the ARM ISA
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Design a 16-bit RISC machine in SystemVerilog that meets clock cycle contraints
-        \item Write comprehensive testbenches for each module and for the complete system
-        \item Use ModelSim to analyze waveforms at each stage of instruction execution and identify bugs
-    \end{itemize}
-
-    \customItem[
-        title=Compass Card Data Modelling,
-        duration=February 2024,
-        keyHighlight=Write Python scripts to transform CSV data downloaded from \href{https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-data}{Translink} into an interactive map
+        title=Motorola 68000 Microcomputer System,
+        duration=January 2025 - April 2025,
     ]
+    \vspace{-1.5em}
     \begin{itemize}
-        \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Transform CSV data using pandas and plot it on an interactive HTML map
-        \item Write detailed instructions on how to use the scripts, including randomized sample data generated with a Python script
+        \item Built a M68k-based microcomputer system with integrated SRAM, DRAM and EEPROM
+        \item Implemented a DRAM cache controller in Verilog to manage read, write and refresh cycles
+        \item Designed and verified Verilog and VHDL modules for an 8-way set associative cache to improve DRAM access time by 1.7x
+        \item Wrote embedded software in C for I2C and SPI interfaces to communicate with peripheral EEPROM and I/O devices
     \end{itemize}
-
     \customItem[
         title=Embedded Deep Neural Network Accelerator,
         duration=November 2024,
-        keyHighlight=Designed and implemented a hardware-accelerated deep neural network system using SystemVerilog and Quartus Platform Designer, integrated with an embedded Nios II processor.
     ]
+    \vspace{-1.5em}
     \begin{itemize}
-        \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed a system-on-chip (SoC) architecture incorporating a softcore Nios II CPU and custom hardware accelerators for a multi-layer perceptron neural network with the abillity to identify hand-written digits.
-        \item Write a custom SystemVerilog module to perform matrix-vector multiplication, reducing the computational load on the CPU and improving digit-recognition times by 30\%
+        \item Built a Nios II-based hardware accelerator in Quartus Platform Designer to run a neural network for handwritten digit recognition
+        \item Wrote a SystemVerilog module to perform matrix-vector multiplication, reducing the computational load on the CPU and improving digit recognition times by 30\%
     \end{itemize}
-     
-\end{workSection}
-
-\begin{workSection}{Activities}
      \customItem[
-        title=UBC Varsity Outdoor Club: Webmaster,
-        keyHighlight=Manage the club website using PHP{,} MySQL and Django,
-        duration=March 2023 – Present
-    ]
+        title=Operating System Kernel,
+        duration=September 2023 - December 2023,
+     ]
+    \vspace{-1.5em}
      \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-        \item Troubleshoot technical issues relating to Apache, MySQL and Docker
-        \item Integrate the website with the club's Discord server using Python, PHP and Docker
-        \item Write shell scripts to automate developer machine setup
-        \item Write Python scripts to automate club elections and membership verification at events
+        \itemsep -6pt {}
+        \item Implemented a simple operating system targetting the MIPS architecture
+        \item Added UNIX syscalls to support execution of user programs
+        \item Designed and implemented a virtual memory system that reduced RAM usage by 75\%
      \end{itemize}
+     \customItem[
+        title=RISC Processor,
+        duration=October 2022 - December 2022,
+     ]
+    \vspace{-1.5em}
+     \begin{itemize}
+        \itemsep -6pt {}
+        \item Used SystemVerilog to build a 16-bit RISC processor capable of executing a subset of the ARM ISA
+        \item Optimized control and data paths for each instruction to maximize throughput
+    \end{itemize}
+
 \end{workSection}
 
 \end{document}
